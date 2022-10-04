@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300;600&display=swap");
+
+/* general  */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* nav  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+  color: #fff;
+}
+nav .logo {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 8px 12px;
+  justify-content: space-between;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+nav .ri-close-fill,
+nav .ri-bar-chart-horizontal-line {
+  display: none;
+}
+@media (max-width: 700px) {
+  .nav-links ul {
+    margin: 30px;
+  }
+  .nav-links ul li {
+    display: block;
+    padding: 12px;
+  }
+  .nav-links {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.7s;
+    background: #f44336;
+  }
+
+  nav .ri-bar-chart-horizontal-line,
+  nav .ri-close-fill {
+    display: block;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+/* header  */
+header {
+  font-family: "Bebas Neue", cursive;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7) url(img/jumbotron.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.text-box {
+  width: 90%;
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-box h1 {
+  font-size: 60px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+}
+.hero-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+}
+.hero-btn:hover {
+  background-color: #f44336;
+  transition: 0.5s;
+  border: 1px solid #f44336;
+}
+
+/* more general */
+section {
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+.btn {
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #f44336;
+  transition: 0.5s;
+}
+
+/* about section  */
+.about {
+  padding: 60px 0;
+  margin: 0 auto;
+  width: 80%;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.profil-img {
+  width: 430px;
+  height: 500px;
+  background-image: url(img/profil.png);
+  background-size: cover;
+}
+.about-wrapper {
+  grid-column: 2 /-1;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-wrapper h1 {
+  color: #f44336;
+  font-size: 30px;
+  cursor: pointer;
+}
+.about-wrapper p {
+  line-height: 2;
+}
+.about-wrapper .btn {
+  margin-right: auto;
+}
+@media (max-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .about {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .about .btn {
+    margin-top: 30px;
+    display: inline-block;
+  }
+  .about-wrapper {
+    text-align: center;
+    background: #fff3f3;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 35px;
+    line-height: 2;
+  }
+  .about-wrapper p {
+    line-height: 2;
+  }
+  .about-wrapper .btn {
+    margin: auto;
+    margin-top: 35px;
+    padding: 10px;
+  }
+  .profil-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
+
+/* experiences section  */
+.experiences {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 10px;
+}
+.experiences-wrapper {
+  order: 1;
+  padding: 50px;
+}
+.experiences-wrapper p {
+  text-align: justify;
+  padding-right: 60px;
+  line-height: 2;
+}
+.experiences-wrapper h1 {
+  color: #f44336;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 50px;
+}
+.experiences-wrapper h3 {
+  font-size: 35px;
+  margin: 30px 0;
+}
+.experiences span {
+  background: rgba(0, 0, 0, 0.7) url(img/work.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  position: relative;
+  grid-column: 2 / -1;
+  order: 2;
+  box-sizing: border-box;
+}
+.experiences-title h1 {
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
+  font-size: 180px;
+  padding: 70px 50px;
+  overflow-wrap: break-word;
+}
+.logo-container {
+  display: flex;
+  margin: 15px auto;
+  width: 350px;
+  justify-content: center;
+  padding: 30px 85px 0 0;
+  flex-wrap: wrap;
+}
+.logo-container .logo {
+  height: 50px;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+  }
+  .experiences-title {
+    order: 1;
+  }
+  .experiences-title h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .experiences-wrapper {
+    order: 2;
+  }
+  .experiences-wrapper h1 {
+    margin: 30px 0;
+  }
+}
+
+/* contact section  */
+.contact {
+  height: 80%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.contact-form {
+  order: 2;
+  margin: auto;
+}
+.contact-form h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #f44336;
+}
+.form-inform {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group .form-input {
+  padding: 10px;
+  border: 1px solid;
+  resize: none;
+  display: inline;
+  width: 80%;
+}
+.btn-group button {
+  padding: 20px 30px;
+  background-color: transparent;
+  border: 1px solid;
+}
+.btn-group button:hover {
+  background-color: #f44336;
+  color: #fff;
+  border: 1px #f44336 solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-group a {
+  text-decoration: none;
+}
+.btn-group a:hover {
+  font-weight: bolder;
+  color: #f44336;
+}
+.contact-other {
+  order: 1;
+  margin: auto;
+  text-align: center;
+}
+.contact-other .contact-social {
+  margin-left: -25%;
+  color: #f44336;
+  margin-top: 30px;
+}
+.contact-social h5 {
+  margin-bottom: 10px;
+}
+.contact-social a {
+  text-decoration: none;
+  color: #f44336;
+}
+.noted {
+  height: 250px;
+}
+@media (max-width: 700px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .contact-form {
+    order: 2;
+  }
+  .contact-other {
+    order: 2;
+  }
+  .form-group {
+    margin: 12px 0;
+  }
+  .form-group label {
+    line-height: 2;
+  }
+  .contact-other {
+    margin-top: 80px;
+  }
+}
+
+/* footer  */
+footer {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #fff3f3;
+}
+footer p {
+  padding: 20px;
+  line-height: 2;
+  text-align: center;
+}
