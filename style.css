@@ -162,7 +162,7 @@ section {
   }
   .about {
     text-align: center;
-    margin: 0 auto;
+    margin: 50px auto 200px;
     padding: 20px 0;
   }
   .about .btn {
@@ -253,6 +253,7 @@ section {
     display: flex;
     flex-direction: column;
     margin: 100px 0;
+    margin-bottom: 400px;
   }
   .experiences-title {
     order: 1;
@@ -266,6 +267,9 @@ section {
   }
   .experiences-wrapper h1 {
     margin: 30px 0;
+  }
+  .logo-container {
+    width: 250px;
   }
 }
 
