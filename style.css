@@ -153,6 +153,7 @@ section {
 }
 .about-wrapper .btn {
   margin-right: auto;
+  text-decoration: none;
 }
 @media (max-width: 700px) {
   .main {
